@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Portal Guru</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+
+			font-family: 'CourierNew', Courier, monospace;
+		}
+
+		body {
+			height: 100vh;
+		}
+
+		.container {
+			width: 100vw;
+			padding-inline: 20vw;
+			display: grid;
+			place-items: center;
+			gap: 1rem;
+		}
+
+		h2 {
+			margin-top: 2rem
+		}
+
+		#mahasiswa {
+			font-family: Arial, Helvetica, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		#mahasiswa td,
+		#mahasiswa th {
+			border: 1px solid #ddd;
+			padding: 8px;
+			text-align: center;
+		}
+
+		#mahasiswa th {
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+
+		a:link,
+		a:visited {
+			background-color: transparent;
+			color: black;
+			border: 2px solid black;
+			padding: 10px 20px;
+			text-align:
+				center;
+			text-decoration: none;
+			display: inline-block;
+		}
+
+		a:hover,
+		a:active {
+			background-color: black;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h2>Absen Basis Web</h2>
+		<h3>Portal Dosen</h3>
+		<a href="/dosen/mulai">Mulai Baru</a>
+		<a href="/dosen"> &#8634; Refresh</a>
+		<table id="mahasiswa">
+			<thead>
+				<tr>
+					<th>Nim</th>
+					<th>Nama</th>
+					<th>Status Absen</th>
+					<th>Lokasi</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each results}}
+				<tr>
+					<td>{{ NIM }}</td>
+					<td>{{ Nama }}</td>
+					<td>
+						{{#if Status_absen}}
+						&#10003;
+						{{else}}
+						&#10005;
+						{{/if}}
+					</td>
+					<td>
+						<a href="{{ lokasi }}" target="_blank">Lokasi</a>
+					</td>
+				</tr>
+				{{/each}}
+			</tbody>
+
+		</table>
+	</div>
+</body>
+<script>
+	var url_string = window.location.href
+	var url = new URL(url_string);
+	var alertt = url.searchParams.get("alert");
+	if (alertt != null) {
+		alert(alertt);
+		location.replace("/dosen");
+	}
+</script>
+
+</html>
