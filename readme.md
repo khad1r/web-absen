@@ -6,7 +6,7 @@ Web service sederhana untuk absensi dengan fitur geolocation dengan menggunakana
 
 ## Requirements
 
-Node.js.
+Node.js, Mysql.
 
 ### Node
 
@@ -35,22 +35,20 @@ If the installation was successful, you should be able to run the following comm
 
 ## Install
 
-    $ git clone https://github.com/YOUR_USERNAME/PROJECT_TITLE
-    $ cd PROJECT_TITLE
-    $ yarn install
+    $ git clone https://github.com/khad1r/web-absen
+    $ cd web-absen
+    $ npm install
 
 ## Configure app
 
-Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
+Open `.env` then edit it with your settings. You will need:
 
-- A setting;
+- Mysql Database;
 - Another setting;
 - One more setting;
 
 ## Running the project
 
-    $ yarn start
+Be sure you have run `XAMPP`
 
-## Simple build for production
-
-    $ yarn build
+    $ Node index.js
