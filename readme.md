@@ -1,4 +1,4 @@
-# Restfull Api Absensi
+# Restful Api Absensi
 
 ## UNIVERSITAS MUHAMMADIYAH GRESIK
 
