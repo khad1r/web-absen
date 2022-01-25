@@ -35,6 +35,8 @@ If the installation was successful, you should be able to run the following comm
 
 ## Install
 
+you can clone this repo or just download the archive file
+
     $ git clone https://github.com/khad1r/web-absen
     $ cd web-absen
     $ npm install
@@ -43,9 +45,8 @@ If the installation was successful, you should be able to run the following comm
 
 Open `.env` then edit it with your settings. You will need:
 
-- Mysql Database;
-- Another setting;
-- One more setting;
+- Mysql Database setting;
+- server port;
 
 ## Running the project
 
