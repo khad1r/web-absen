@@ -1,5 +1,9 @@
 # Restfull Api Absensi
 
+## UNIVERSITAS MUHAMMADIYAH GRESIK
+
+## ABDUL KADIR JAELANI - 190602057
+
 Web service sederhana untuk absensi dengan fitur geolocation dengan menggunakana node.js
 
 ---
