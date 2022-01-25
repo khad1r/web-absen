@@ -1,4 +1,4 @@
-# Restfull Api Absensi
+# Restful Api Absensi
 
 Web service sederhana untuk absensi dengan fitur geolocation dengan menggunakana node.js
 
